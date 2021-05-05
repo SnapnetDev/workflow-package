@@ -48,6 +48,8 @@ class WorkFlowProvider extends ServiceProvider
            __DIR__  . '/../../app/Models/WorkFlowUserGroup.php'=>app_path('Models/WorkFlowUserGroup.php'),
            __DIR__  . '/../../app/Models/WorkFlowStage.php'=>app_path('Models/WorkFlowStage.php'),
 
+           __DIR__  . '/../../routes'=>base_path('routes/vendor-routes'),
+
 
        ]);
 
