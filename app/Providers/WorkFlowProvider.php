@@ -25,6 +25,8 @@ class WorkFlowProvider extends ServiceProvider
     {
         //
 
+        
+
        $this->publishes([
 
           __DIR__  . '/../../resources/views/workflow'=>resource_path('views/workflow'),
