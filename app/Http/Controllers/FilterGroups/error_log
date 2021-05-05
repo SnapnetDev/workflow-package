@@ -1,0 +1,12 @@
+[23-Sep-2020 16:20:22 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Base\BaseController' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/FilterGroups/CandidateFilterGroupController.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/FilterGroups/CandidateFilterGroupController.php on line 16
+[23-Sep-2020 16:20:34 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/FilterGroups/CandidateFilterGroupShare.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/FilterGroups/CandidateFilterGroupShare.php on line 16
+[23-Sep-2020 16:20:38 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Base\BaseController' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/FilterGroups/FilterGroupController.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/FilterGroups/FilterGroupController.php on line 19

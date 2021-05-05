@@ -1,0 +1,12 @@
+[22-Sep-2020 06:52:07 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\Discipline\DisciplinePort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/Discipline/DisciplineAdapter.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/Discipline/DisciplineAdapter.php on line 9
+[22-Sep-2020 06:52:49 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\Discipline\DisciplineSkillPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/Discipline/DisciplineSkillAdapter.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/Discipline/DisciplineSkillAdapter.php on line 6
+[22-Sep-2020 06:53:21 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\Discipline\DisciplineSkillPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/Discipline/DisciplineSkillService.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/Discipline/DisciplineSkillService.php on line 4

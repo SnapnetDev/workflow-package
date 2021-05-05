@@ -1,0 +1,4 @@
+[22-Sep-2020 07:02:08 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\User\UserPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/User/UserAdapter.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/User/UserAdapter.php on line 13

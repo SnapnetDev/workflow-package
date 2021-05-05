@@ -1,0 +1,4 @@
+[22-Sep-2020 06:48:01 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\Crud\CrudPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/Certification/CertificationAdapter.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/Certification/CertificationAdapter.php on line 12

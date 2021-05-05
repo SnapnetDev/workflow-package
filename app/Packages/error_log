@@ -1,0 +1,84 @@
+[18-Sep-2020 23:20:09 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\BooleanPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/BooleanAdapter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/BooleanAdapter.php on line 20
+[18-Sep-2020 23:20:26 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\DataPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/DataAdapter.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/DataAdapter.php on line 36
+[18-Sep-2020 23:20:46 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\FactoryPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/FactoryAdapter.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/FactoryAdapter.php on line 26
+[18-Sep-2020 23:21:20 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\FilterPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/FilterAdapter.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/FilterAdapter.php on line 17
+[18-Sep-2020 23:22:02 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\GarbagePort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/GarbageAdapter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/GarbageAdapter.php on line 22
+[18-Sep-2020 23:22:34 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\NotificationPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/NotificationAdapter.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/NotificationAdapter.php on line 18
+[18-Sep-2020 23:22:55 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\PermissionPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/PermissionAdapter.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/PermissionAdapter.php on line 15
+[18-Sep-2020 23:23:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\RepoPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/RepoAdapter.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/RepoAdapter.php on line 29
+[18-Sep-2020 23:23:36 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\ScanPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/ScanAdapter.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/ScanAdapter.php on line 16
+[18-Sep-2020 23:24:08 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\UploadPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/UploadAdapter.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/UploadAdapter.php on line 15
+[18-Sep-2020 23:24:48 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\ValuePort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/ValueAdapter.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/ValueAdapter.php on line 14
+[19-Oct-2020 04:48:16 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\RepoPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/RepoAdapter.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/RepoAdapter.php on line 29
+[19-Oct-2020 05:31:26 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\ScanPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/ScanAdapter.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/ScanAdapter.php on line 16
+[19-Oct-2020 06:50:38 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\ValuePort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/ValueAdapter.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/ValueAdapter.php on line 14
+[20-Oct-2020 10:29:57 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\BooleanPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/BooleanAdapter.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/BooleanAdapter.php on line 20
+[20-Oct-2020 11:44:02 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\DataPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/DataAdapter.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/DataAdapter.php on line 36
+[20-Oct-2020 12:05:34 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\GarbagePort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/GarbageAdapter.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/GarbageAdapter.php on line 22
+[20-Oct-2020 12:13:13 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\UploadPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/UploadAdapter.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/UploadAdapter.php on line 15
+[20-Oct-2020 12:19:50 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\FactoryPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/FactoryAdapter.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/FactoryAdapter.php on line 26
+[20-Oct-2020 17:14:26 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\PermissionPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/PermissionAdapter.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/PermissionAdapter.php on line 15
+[20-Oct-2020 20:07:14 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\NotificationPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/NotificationAdapter.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/NotificationAdapter.php on line 18

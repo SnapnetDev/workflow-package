@@ -1,0 +1,20 @@
+[23-Sep-2020 16:16:31 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Base\BaseController' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Certification/CertificationController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Certification/CertificationController.php on line 13
+[23-Sep-2020 16:16:40 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Certification/CertificationCreateController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Certification/CertificationCreateController.php on line 11
+[23-Sep-2020 16:16:50 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Certification/CertificationDeleteController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Certification/CertificationDeleteController.php on line 9
+[23-Sep-2020 16:17:03 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Certification/CertificationListController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Certification/CertificationListController.php on line 9
+[23-Sep-2020 16:17:08 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Certification/CertificationUpdateController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Certification/CertificationUpdateController.php on line 9

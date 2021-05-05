@@ -1,0 +1,66 @@
+<?php
+
+namespace App\Traits\ModelTraits;
+
+trait {{model}}Trait{
+
+
+    static function getFactory(){
+        return new self;
+    }
+
+    static function fetch(){
+        return self::getFactory()->newQuery();
+    }
+
+
+    static function getValidation(){
+        return [
+            'name'=>'required'
+        ];
+    }
+
+    //gen-model-trait.stub
+
+    static function create{{model}}(){
+        $data = request()->validate(self::getValidation());
+        $obj = self::getFactory()->create($data);
+
+        return [
+            'message'=>'Record created.',
+            'error'=>false
+        ];
+    }
+
+    static function update{{model}}($id){
+        $data = request()->validate(self::getValidation());
+        $check = self::fetch()->where('id',$id);
+        if (!$check->exists()){
+            return [
+                'message'=>'Invalid record!',
+                'error'=>true
+            ];
+        }
+
+        $record = $check->first();
+        $record->update($data);
+        return  [
+            'message'=>'Record saved',
+            'error'=>false
+        ];
+
+    }
+
+
+    static function delete{{model}}($id){
+
+        self::fetch()->where('id',$id)->delete();
+        return [
+            'message'=>'Record removed',
+            'error'=>false
+        ];
+
+    }
+
+
+}

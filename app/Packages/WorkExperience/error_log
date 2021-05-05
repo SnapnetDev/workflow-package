@@ -1,0 +1,4 @@
+[22-Sep-2020 01:03:34 UTC] PHP Fatal error:  Uncaught Error: Interface 'App\Packages\Crud\CrudPort' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/WorkExperience/WorkExperienceAdapter.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Packages/WorkExperience/WorkExperienceAdapter.php on line 7

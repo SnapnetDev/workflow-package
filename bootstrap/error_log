@@ -1,0 +1,36 @@
+[16-Sep-2020 23:42:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php on line 14
+[04-Oct-2020 12:13:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php on line 14
+[17-Oct-2020 21:35:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php on line 14
+[21-Oct-2020 21:41:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php on line 14
+[24-Oct-2020 19:13:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php on line 14
+[14-Nov-2020 12:22:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php on line 14
+[17-Nov-2020 13:30:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php on line 14
+[25-Nov-2020 01:35:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php on line 14
+[27-Jan-2021 02:53:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/bootstrap/app.php on line 14

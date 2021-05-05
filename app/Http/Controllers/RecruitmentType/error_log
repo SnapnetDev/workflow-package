@@ -1,0 +1,20 @@
+[23-Sep-2020 16:24:06 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Base\BaseController' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/RecruitmentType/RecruitmentTypeController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/RecruitmentType/RecruitmentTypeController.php on line 11
+[23-Sep-2020 16:24:13 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/RecruitmentType/RecruitmentTypeCreateController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/RecruitmentType/RecruitmentTypeCreateController.php on line 11
+[23-Sep-2020 16:24:28 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/RecruitmentType/RecruitmentTypeDeleteController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/RecruitmentType/RecruitmentTypeDeleteController.php on line 10
+[23-Sep-2020 16:24:43 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/RecruitmentType/RecruitmentTypeListController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/RecruitmentType/RecruitmentTypeListController.php on line 9
+[23-Sep-2020 16:24:52 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/RecruitmentType/RecruitmentTypeUpdateController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/RecruitmentType/RecruitmentTypeUpdateController.php on line 10

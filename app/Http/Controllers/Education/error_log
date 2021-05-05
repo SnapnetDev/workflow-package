@@ -1,0 +1,20 @@
+[23-Sep-2020 16:19:08 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Base\BaseController' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Education/EducationController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Education/EducationController.php on line 13
+[23-Sep-2020 16:19:19 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Education/EducationCreateController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Education/EducationCreateController.php on line 10
+[23-Sep-2020 16:19:25 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Education/EducationDeleteController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Education/EducationDeleteController.php on line 9
+[23-Sep-2020 16:19:32 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Education/EducationListController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Education/EducationListController.php on line 9
+[23-Sep-2020 16:19:40 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Education/EducationUpdateController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Education/EducationUpdateController.php on line 9

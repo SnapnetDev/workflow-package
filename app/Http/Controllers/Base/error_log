@@ -1,0 +1,4 @@
+[23-Sep-2020 16:13:23 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Base/BaseController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Base/BaseController.php on line 8

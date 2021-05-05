@@ -1,0 +1,20 @@
+[23-Sep-2020 16:25:32 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Base\BaseController' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Skill/SkillController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Skill/SkillController.php on line 15
+[23-Sep-2020 16:25:42 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Skill/SkillCreateController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Skill/SkillCreateController.php on line 10
+[23-Sep-2020 16:25:51 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Skill/SkillDeleteController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Skill/SkillDeleteController.php on line 10
+[23-Sep-2020 16:25:58 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Skill/SkillListController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Skill/SkillListController.php on line 9
+[23-Sep-2020 16:26:06 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Http\Controllers\Controller' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Skill/SkillUpdateController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Http/Controllers/Skill/SkillUpdateController.php on line 10

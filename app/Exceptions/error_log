@@ -1,0 +1,9 @@
+[12-Sep-2020 01:55:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Exceptions/Handler.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Exceptions/Handler.php on line 7
+[18-Sep-2020 20:26:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Exceptions/Handler.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/vg6o040lm2jt/public_html/mrecruit/app/Exceptions/Handler.php on line 7
+[08-Nov-2020 17:37:40 UTC] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/vg6o040lm2jt/public_html/mrecruit/app/Exceptions/Handler.php on line 7

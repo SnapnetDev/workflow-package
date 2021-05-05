@@ -1,0 +1,27 @@
+namespace App\Http\Controllers;
+
+use Auth;
+use Illuminate\Http\Request;
+
+
+class {{model}}Controller extends Controller
+{
+
+    function __construct()
+    {
+    }
+
+    function store(){
+
+    }
+
+    function update($id){
+
+    }
+
+    function destroy($id){
+
+    }
+
+
+}
