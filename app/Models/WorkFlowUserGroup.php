@@ -67,6 +67,34 @@ class WorkFlowUserGroup extends Model
         ];
     }
 
+    static function removeGroupEmailMapping($email){
+        
+        $user = User::query()->where('email',$email);
+        if (!$user->exists()){
+            return  [
+                'message'=>'Invalid email!',
+                'error'=>true
+            ];
+        }
+
+        $user = $user->first();
+        //workflow_group_id
+        $record = self::fetch()->where('user_id',$user->id);
+        if (!$record->exists()){
+            return  [
+                'message'=>'Mapping already removed!',
+                'error'=>true
+            ];
+        }
+
+        $record->delete();
+
+        return [
+            'message'=>'Selected group-mapping removed.',
+            'error'=>false
+        ];
+
+    }
 
 
 }

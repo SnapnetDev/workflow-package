@@ -178,7 +178,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        HCMRecruitAppService::class
+        HCMRecruitAppService::class,
+        \App\Providers\WorkFlowInitProvider::class
 
     ],
 
