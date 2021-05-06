@@ -79,14 +79,6 @@
                                         </form>
                                     @endforeach
 
-
-                                    @if ($userAnyHasGroup($item))
-                                    <form {!! $confirm() !!} action="{{ route('workflow-user-group.destroy',[$item->email]) }}" method="post">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button style="margin-top: 11px;" class="form-control btn btn-danger btn-sm">Unassign Current Group</button>
-                                    </form>
-                                    @endif
                                 </td>
                             </tr>
 
