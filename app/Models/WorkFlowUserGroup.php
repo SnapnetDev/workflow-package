@@ -73,6 +73,8 @@ class WorkFlowUserGroup extends Model
         $email = $emailCombo[0];
         $workflow_group_id = $emailCombo[1];
 
+//        dd($email,$workflow_group_id);
+
         $user = User::query()->where('email',$email);
         if (!$user->exists()){
             return  [
@@ -82,8 +84,13 @@ class WorkFlowUserGroup extends Model
         }
 
         $user = $user->first();
-        //workflow_group_id
+
+//        dd($user->id,$workflow_group_id,$user->name,$user->email);
+        //workflow_group_ids
         $record = self::fetch()->where('user_id',$user->id)->where('workflow_group_id',$workflow_group_id);
+
+//        dd($record->first());
+//        dd($user->id);
         if (!$record->exists()){
             return  [
                 'message'=>'Mapping already removed!',
