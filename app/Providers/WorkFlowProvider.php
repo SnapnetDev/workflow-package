@@ -51,7 +51,9 @@ class WorkFlowProvider extends ServiceProvider
            __DIR__  . '/../../routes'=>base_path('routes/vendor-routes'),
 
 
+
            /////Migrations/////
+
            __DIR__ . '/../../database/migrations/2021_04_13_102923_create_work_flows_table.php'=>base_path('database/migrations/2021_04_13_102923_create_work_flows_table.php'),
            __DIR__ . '/../../database/migrations/2021_04_13_103917_create_work_flow_stages_table.php'=>base_path('database/migrations/2021_04_13_103917_create_work_flow_stages_table.php'),
            __DIR__ . '/../../database/migrations/2021_04_13_104015_create_work_flow_groups_table.php'=>base_path('database/migrations/2021_04_13_104015_create_work_flow_groups_table.php'),
