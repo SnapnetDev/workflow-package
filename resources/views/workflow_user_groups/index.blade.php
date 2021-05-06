@@ -19,7 +19,7 @@
                         <select onchange="location.href=`{{ route('workflow-user-group.index') }}?grp=${this.value}`;" name="" id="group-filter" style="margin-bottom: 11px;">
                             <option value="">--Filter Groups--</option>
                             @foreach ($groups as $group)
-                              <option {{ $selected(request()->filled('grp')) }} value="{{ $group->id }}">{{ $group->name }}</option>
+                              <option {{ $selected(request()->filled('grp') && request('grp') == $group->id) }} value="{{ $group->id }}">{{ $group->name }}</option>
                             @endforeach
                         </select>
                     </div>
