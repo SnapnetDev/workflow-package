@@ -6,6 +6,7 @@ use App\Models\WorkFlowGroup;
 use App\Models\WorkFlowUserGroup;
 use App\Traits\ResponseTrait;
 use App\User;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
 class WorkFlowUserGroupController extends Controller
@@ -15,7 +16,17 @@ class WorkFlowUserGroupController extends Controller
 
 
     function loadUsers(){
+
         $this->data['users'] = User::query()->whereIn('role',['admin','user'])->paginate(20);
+
+        if (\request()->filled('grp')){
+            $this->data['users'] = User::query()->whereIn('role',['admin','user'])->whereHas('groups',function(Builder $builder){
+                return $builder->whereHas('group',function(Builder $builder){
+                    return $builder->where('id',\request('grp'));
+                });
+            })->paginate(20);
+        }
+
     }
 
     function loadGroups(){

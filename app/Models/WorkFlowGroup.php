@@ -73,4 +73,10 @@ class WorkFlowGroup extends Model
 
     }
 
+
+    function user_groups(){
+        return $this->hasMany(WorkFlowUserGroup::class,'workflow_group_id');
+    }
+
+
 }
