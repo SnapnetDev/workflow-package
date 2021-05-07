@@ -84,10 +84,7 @@ class WorkFlow extends Model
         return $stageQuery;
     }
 
-    static function createWorkFlowInstanceStage($workFlowInstanceId){
-       $workFlowId = WorkFlowInstance::query()->where('id',$workFlowInstanceId)->first()->workflow_id;
 
-    }
 
 
 }
