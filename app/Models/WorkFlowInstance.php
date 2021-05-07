@@ -38,6 +38,20 @@ class WorkFlowInstance extends Model
 
     static function getNextStage($workFlowInstanceId){
 
+      $workFlowInstanceStageQuery = WorkFlowInstanceStage::query()->where('workflow_instance_id',$workFlowInstanceId);
+      $workflow_stage_id = $workFlowInstanceStageQuery->first()->workflow_stage_id;
+      $stageQuery = WorkFlowStage::query()->where('id',$workflow_stage_id);
+      $stageQueryObj = $stageQuery->first();
+
+      if (WorkFlowStage::isLastStage($stageQueryObj->id)){
+          return null; //indicates last stage
+      }
+
+      $nextPosition = $stageQueryObj->position + 1;
+      $nextStageQuery = WorkFlowStage::query()->where('id',$workflow_stage_id)->where('position',$nextPosition);
+
+      return $nextStageQuery->first();
+
     }
 
     static function getPrevStage($workFlowInstanceId){
