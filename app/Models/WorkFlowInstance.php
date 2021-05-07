@@ -36,4 +36,13 @@ class WorkFlowInstance extends Model
     }
 
 
+    static function getNextStage($workFlowInstanceId){
+
+    }
+
+    static function getPrevStage($workFlowInstanceId){
+
+    }
+
+
 }

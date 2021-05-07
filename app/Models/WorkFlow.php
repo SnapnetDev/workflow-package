@@ -72,4 +72,22 @@ class WorkFlow extends Model
     }
 
 
+    static function getFirstStage($workFlowId){
+        $stageQuery = WorkFlowStage::query()->where('workflow_id',$workFlowId)->where('position',1);
+        return $stageQuery;
+    }
+
+    static function getLastStage($workFlowId){
+        $stageQuery = WorkFlowStage::query()->where('workflow_id',$workFlowId);
+        $count = $stageQuery->count();
+        $stageQuery = $stageQuery->where('position',$count);
+        return $stageQuery;
+    }
+
+    static function createWorkFlowInstanceStage($workFlowInstanceId){
+       $workFlowId = WorkFlowInstance::query()->where('id',$workFlowInstanceId)->first()->workflow_id;
+
+    }
+
+
 }
