@@ -114,6 +114,20 @@ class WorkFlowStage extends Model
 
     }
 
+    static function isFirstStage($stageId){
+
+        $record = self::fetch()->where('id',$stageId)->first();
+        $workFlowId = $record->workflow_id;
+        $record = self::fetch()->where('workflow_id',$workFlowId)->orderBy('position','asc')->first();
+
+        return ($record->id == $stageId);
+
+    }
+
+    static function stageExists($stageId){
+        return self::query()->where('id',$stageId)->exists();
+    }
+
 
 
 

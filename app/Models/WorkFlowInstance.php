@@ -38,7 +38,8 @@ class WorkFlowInstance extends Model
 
     static function getNextStage($workFlowInstanceId){
 
-      $workFlowInstanceStageQuery = WorkFlowInstanceStage::query()->where('workflow_instance_id',$workFlowInstanceId);
+      $workFlowInstanceStageQuery = WorkFlowInstanceStage::query()
+          ->where('workflow_instance_id',$workFlowInstanceId)->orderBy('id','desc');
       $workflow_stage_id = $workFlowInstanceStageQuery->first()->workflow_stage_id;
       $stageQuery = WorkFlowStage::query()->where('id',$workflow_stage_id);
       $stageQueryObj = $stageQuery->first();
@@ -47,15 +48,44 @@ class WorkFlowInstance extends Model
           return null; //indicates last stage
       }
 
+      $workFlowId = $stageQueryObj->workflow_id;
+
       $nextPosition = $stageQueryObj->position + 1;
-      $nextStageQuery = WorkFlowStage::query()->where('id',$workflow_stage_id)->where('position',$nextPosition);
+
+      $nextStageQuery = WorkFlowStage::query()->where('workflow_id',$workFlowId)->where('position',$nextPosition);
 
       return $nextStageQuery->first();
 
     }
 
     static function getPrevStage($workFlowInstanceId){
+        $workFlowInstanceStageQuery = WorkFlowInstanceStage::query()
+            ->where('workflow_instance_id',$workFlowInstanceId)->orderBy('id','desc');
+        $workflow_stage_id = $workFlowInstanceStageQuery->first()->workflow_stage_id;
+        $stageQuery = WorkFlowStage::query()->where('id',$workflow_stage_id);
+        $stageQueryObj = $stageQuery->first();
 
+        if (WorkFlowStage::stageExists($stageQueryObj->id)){
+            return null;
+        }
+
+        if (!WorkFlowStage::isFirstStage($stageQueryObj->id)){
+            return null; //indicates last stage
+        }
+
+        $workFlowId = $stageQueryObj->workflow_id;
+
+        $prevPosition = $stageQueryObj->position - 1;
+
+        $check = WorkFlowStage::query()->where('position',$prevPosition)->where('workflow_id',$workFlowId);
+
+        if (!$check->exists()){
+            return null;
+        }
+
+        $prevStageQuery = $check; // WorkFlowStage::query()->where('workflow_id',$workFlowId)->where('position',$prevPosition);
+
+        return $prevStageQuery->first();
     }
 
 
