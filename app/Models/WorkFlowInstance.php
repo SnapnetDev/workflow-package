@@ -21,17 +21,58 @@ class WorkFlowInstance extends Model
         return self::getFactory()->newQuery();
     }
 
-    static function triggerWorkFlow($data){
+    static function triggerWorkFlow($data){//name,preview_url,workflow_id,module
 
-        $obj = self::getFactory();
-        $obj = $obj->create($data);
+        if (!WorkFlow::getByName($data['name'])->exists()){
+            return  [
+                'message'=>'Invalid workflow Name!',
+                'error'=>true
+            ];
+        }
 
-        return [
-            'message'=>'Workflow process created',
-            'error'=>false,
-            'data'=>$obj
+        $workFlowInstance = WorkFlow::getByName($data['name'])->first();
+
+        $newData = [
+            'preview_url'=>$data['preview_url'],
+            'workflow_id'=>$workFlowInstance->id,
+            'module'=>$data['module']
         ];
 
+        $obj = self::getFactory();
+        $obj = $obj->create($newData);
+
+        $workFlowInstanceStage = self::createFirstStage($obj);
+
+        return [
+
+            'message'=>'Workflow process created',
+            'error'=>false,
+            'data'=>$obj,
+            'workflow_instance_stage_data'=>$workFlowInstanceStage
+
+        ];
+
+
+    }
+
+    static function createFirstStage($workFlowInstance){
+
+        $workFlowId = $workFlowInstance->workflow_id;
+
+        $stageQuery = WorkFlowStage::query()->where('workflow_id',$workFlowId)->where('position',1);
+
+        $stageObject = $stageQuery->first();
+
+        $newInstanceStage = WorkFlowInstanceStage::createWorkFlowInstanceStage([
+
+            'workflow_instance_id'=>$workFlowInstance->id,
+            'workflow_stage_id'=>$stageObject->id,
+            'notes'=>'notes here ...',
+            'status'=>0
+
+        ]);
+
+       return $newInstanceStage;
 
     }
 
@@ -59,6 +100,7 @@ class WorkFlowInstance extends Model
     }
 
     static function getPrevStage($workFlowInstanceId){
+
         $workFlowInstanceStageQuery = WorkFlowInstanceStage::query()
             ->where('workflow_instance_id',$workFlowInstanceId)->orderBy('id','desc');
         $workflow_stage_id = $workFlowInstanceStageQuery->first()->workflow_stage_id;
@@ -86,6 +128,7 @@ class WorkFlowInstance extends Model
         $prevStageQuery = $check; // WorkFlowStage::query()->where('workflow_id',$workFlowId)->where('position',$prevPosition);
 
         return $prevStageQuery->first();
+
     }
 
 
