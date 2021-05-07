@@ -33,9 +33,11 @@ class WorkFlowInstance extends Model
         $workFlowInstance = WorkFlow::getByName($data['name'])->first();
 
         $newData = [
+
             'preview_url'=>$data['preview_url'],
             'workflow_id'=>$workFlowInstance->id,
             'module'=>$data['module']
+
         ];
 
         $obj = self::getFactory();
@@ -74,6 +76,79 @@ class WorkFlowInstance extends Model
 
        return $newInstanceStage;
 
+    }
+
+    static function approve($workFlowInstanceId,$caller=null){
+
+        $newStage = self::getNextStage($workFlowInstanceId);
+
+        $instanceStage = self::getCurrentInstanceStage($workFlowInstanceId);
+
+        WorkFlowInstanceStage::updateStage($instanceStage->id);
+
+        if (is_null($newStage)){
+            //send notifications here...
+
+            return [
+                'message'=>'Item approved Finally',
+                'error'=>false
+            ];
+        }
+
+
+        $newInstanceStage = WorkFlowInstanceStage::createWorkFlowInstanceStage([
+
+            'workflow_instance_id'=>$workFlowInstanceId,
+            'workflow_stage_id'=>$newStage->id,
+            'notes'=>'notes here ...',
+            'status'=>0
+
+        ]);
+
+        //notify users here ....
+//        $caller->batchNotify();
+
+        return [
+            'message'=>'Item approved Successfully and passed to the next stage',
+            'error'=>false
+        ];
+
+    }
+
+    static function reject($workFlowInstanceId){
+        $prevStage = self::getPrevStage($workFlowInstanceId);
+
+        $instanceStage = self::getCurrentInstanceStage($workFlowInstanceId);
+
+        WorkFlowInstanceStage::updateStage($instanceStage->id);
+
+        if (is_null($prevStage)){
+
+            //send notifications here to same stage...
+
+            return [
+                'message'=>'Item rejected',
+                'error'=>false
+            ];
+        }
+
+
+        $newInstanceStage = WorkFlowInstanceStage::createWorkFlowInstanceStage([
+
+            'workflow_instance_id'=>$workFlowInstanceId,
+            'workflow_stage_id'=>$prevStage->id,
+            'notes'=>'notes here ...',
+            'status'=>0
+
+        ]);
+
+
+    }
+
+    static function getCurrentInstanceStage($workFlowInstanceId){
+        $workFlowInstanceStageQuery = WorkFlowInstanceStage::query()
+            ->where('workflow_instance_id',$workFlowInstanceId)->orderBy('id','desc');
+        return $workFlowInstanceStageQuery->first();
     }
 
 

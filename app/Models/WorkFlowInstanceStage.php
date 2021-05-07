@@ -9,7 +9,7 @@ class WorkFlowInstanceStage extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['workflow_instance_id','workflow_stage_id','notes','status'];
+    protected $fillable = ['workflow_instance_id','workflow_stage_id','notes','status','action_owner'];
 
     static function getFactory(){
         return new self;
@@ -27,6 +27,16 @@ class WorkFlowInstanceStage extends Model
       ]);
 
       return $obj;
+
+    }
+
+    static function updateStage($id){
+
+        $record = self::query()->where('id',$id);
+        $data = request()->validate(['notes'=>'required','status'=>'required']);
+        $record = $record->update($data);
+
+        return $record;
 
     }
 
