@@ -143,6 +143,12 @@ class WorkFlowInstance extends Model
         ]);
 
 
+        return [
+            'message'=>'Item rejected',
+            'error'=>false
+        ];
+
+
     }
 
     static function getCurrentInstanceStage($workFlowInstanceId){
